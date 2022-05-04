@@ -126,6 +126,38 @@ const prisma = new PrismaClient();
 
     console.log("5 new records were successfully added to the Student table");
 
+    await prisma.missionCommander.upsert({
+      where: { name: "Carlo Gilmar" },
+      update: {},
+      create: {
+        name: "Carlo Gilmar",
+        username: "carlogilmar",
+        mainStack: "something",
+      },
+    });
+
+    await prisma.missionCommander.upsert({
+      where: { name: "Fernanda Ochoa" },
+      update: {},
+      create: {
+        name: "Fernanda Ochoa",
+        username: "fernandaochoa",
+        mainStack: "something",
+      },
+    });
+
+    await prisma.missionCommander.upsert({
+      where: { name: "Rodrigo Martínez" },
+      update: {},
+      create: {
+        name: "Rodrigo Martinez",
+        username: "romarpla",
+        mainStack: "something",
+      },
+    });
+
+    console.log("5 new records were successfully added to the MissionCommander table");
+
   } catch (e) {
     console.error(e);
     process.exit(1);

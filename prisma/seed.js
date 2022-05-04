@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 (async function main() {
   try {
-    const woopa = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa" },
       update: {},
       create: {
@@ -13,7 +13,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa1 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa1" },
       update: {},
       create: {
@@ -23,7 +23,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa2 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa 2" },
       update: {},
       create: {
@@ -33,7 +33,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa3 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa 3" },
       update: {},
       create: {
@@ -43,7 +43,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa4 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa 4" },
       update: {},
       create: {
@@ -53,7 +53,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa5 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa 5" },
       update: {},
       create: {
@@ -63,7 +63,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const woopa6 = await prisma.explorer.upsert({
+    await prisma.explorer.upsert({
       where: { name: "Woopa 6" },
       update: {},
       create: {
@@ -75,7 +75,7 @@ const prisma = new PrismaClient();
 
     console.log("7 new records were successfully added to the Explorer table");
 
-    const student0 = await prisma.student.upsert({
+    await prisma.student.upsert({
       where: { name: "Enrique" },
       update: {},
       create: {
@@ -84,7 +84,7 @@ const prisma = new PrismaClient();
         missionCommander: "Carlo Gilmar",
       },
     });
-    const student1 = await prisma.student.upsert({
+    await prisma.student.upsert({
       where: { name: "Dahir" },
       update: {},
       create: {
@@ -94,7 +94,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const student2 = await prisma.student.upsert({
+    await prisma.student.upsert({
       where: { name: "Elias" },
       update: {},
       create: {
@@ -104,7 +104,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const student3 = await prisma.student.upsert({
+    await prisma.student.upsert({
       where: { name: "Felipe" },
       update: {},
       create: {
@@ -114,7 +114,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    const student4 = await prisma.student.upsert({
+    await prisma.student.upsert({
       where: { name: "David" },
       update: {},
       create: {

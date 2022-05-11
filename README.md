@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Project designed by [Carlo Gilmar][carlogilmar] to query data from a database through http requests.
+Practice project designed by [Carlo Gilmar][carlogilmar] to query data from a database through http requests. At the same time, this project was expanded to implement CORS and be complemented with the [client-launchx][client-launchx-url] project.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -204,3 +204,4 @@ Project Link: [https://github.com/javiermendez-coder/prisma](https://github.com/
 [launchx]: https://github.com/LaunchX-InnovaccionVirtual
 [postman]: https://www.postman.com/
 [psql-url]: https://www.postgresql.org/download/
+[client-launchx-url]: https://github.com/JavierMendez-Coder/client-launchx

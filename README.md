@@ -112,9 +112,9 @@ To get a local copy up and running follow these simple steps.
    npm install
    ```
 3. Create the tables
-  ```sh
-  npm run tables
-  ```
+   ```sh
+   npm run tables
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

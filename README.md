@@ -100,10 +100,6 @@ To get a local copy up and running follow these simple steps.
   ```sql
   CREATE DATABASE "explorers_api";
   ```
-* create the tables
-  ```sh
-  npm run tables
-  ```
 
 ### Installation
 
@@ -115,6 +111,10 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ```
+3. Create the tables
+  ```sh
+  npm run tables
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -125,7 +125,7 @@ To get a local copy up and running follow these simple steps.
 
 This API allows you to access to a "explorers" (basically the way the instructors refer to us) list from the `explorers_api` database. You can access it via browser or API platforms like [Postman][postman].
 
-Furthermore, is recommended to create a `.env` file with the following data, however your free to change it in any way you want.
+Furthermore, is recommended to create a `.env` file with the following data, however you are free to change it in any way you want.
 
 * .env
   ```

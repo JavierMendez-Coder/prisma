@@ -89,14 +89,12 @@ To get a local copy up and running follow these simple steps.
   ```sh
   npm install npm@latest -g
   ```
-
-* install [PostgreSQL][psql-url]
-
-* start database server (`bash`)
+* Install [PostgreSQL][psql-url]
+* Start database server (`bash`)
   ```sh
   sudo service postgresql start
   ```
-* create the `explorers_api` database
+* Create the `explorers_api` database
   ```sql
   CREATE DATABASE "explorers_api";
   ```
@@ -111,7 +109,21 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ```
-3. Create the tables
+3. Create a .env file with following data; remember to change the psql user and password to yours
+   ```env
+   DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/explorers_api?schema=public"
+   PORT="3000"
+   CORS_PORT="8081"
+   ```
+4. Reset the database
+   ```sh
+   npx prisma migrate reset
+   ```
+5. Re-establish the link between schema.prisma and .env files
+   ```
+   npx prisma generate
+   ```
+6. Create the tables
    ```sh
    npm run tables
    ```
@@ -125,14 +137,7 @@ To get a local copy up and running follow these simple steps.
 
 This API allows you to access to a "explorers" (basically the way the instructors refer to us) list from the `explorers_api` database. You can access it via browser or API platforms like [Postman][postman].
 
-Furthermore, is recommended to create a `.env` file with the following data, however you are free to change it in any way you want.
-
-* .env
-  ```
-  DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/explorers_api?schema=public"
-  PORT="3000"
-  CORS_PORT="8081"
-  ```
+Furthermore, is recommended to create a `.env` file with the data shown in the previous section, however you are free to change it in any way you want.
 
 ### Run App
 
